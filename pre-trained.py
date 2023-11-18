@@ -5,14 +5,14 @@ import numpy as np
 
 model = YOLO("yolov8m.pt")
 
-results = model.predict("cat_dog.jpg")
+results = model.predict("test.jpg")
 
 result = results[0]
 
 len(result.boxes)
 
 # Create a black image
-img = cv2.imread('cat_dog.jpg')
+img = cv2.imread('test.jpg')
 # Draw a diagonal blue line with thickness of 5 px
 font = cv2.FONT_HERSHEY_SIMPLEX
 
